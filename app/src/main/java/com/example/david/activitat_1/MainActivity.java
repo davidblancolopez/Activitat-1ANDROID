@@ -8,7 +8,9 @@ import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
 
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener, DatePickerDialog.OnDateSetListener {
 
@@ -56,12 +58,22 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (v.getId() == R.id.buttonEnviar){
 
 
+        }else if(v == fromDateEtxt) {
+            fromDatePickerDialog.show();
+
         }
     }
 
 
     @Override
-    public void onDateSet(DatePicker datePicker, int i, int i1, int i2) {
+    public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
+
+
+        Calendar newDate = Calendar.getInstance();
+        newDate.set(year, month, dayOfMonth);
+        SimpleDateFormat dateFormatter = new SimpleDateFormat("dd-MM-yyyy", Locale.getDefault());
+
+        fromDateEtxt.setText(dateFormatter.format(newDate.getTime()));
 
     }
 }
