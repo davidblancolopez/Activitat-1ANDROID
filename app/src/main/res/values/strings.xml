@@ -4,4 +4,7 @@
     <string name="lugar">Activitat-1</string>
     <string name="fecha_nacimiento">Activitat-1</string>
     <string name="profesion">Activitat-1</string>
+
+    <string name="from_date">Fecha nacimiento</string>
+    <string name="to_date">To Date</string>
 </resources>
