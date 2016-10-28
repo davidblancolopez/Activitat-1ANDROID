@@ -4,9 +4,11 @@ import android.app.DatePickerDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.Spinner;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -48,6 +50,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                2. L'objecte que el "vigila" i que implementa la interfície onDateSetListener
                3. Any, mes i dia del calendar que es mostren per defecte
              */
+
+
+
+
+                /*SPINNER*/
+
+
+        Spinner spinner = (Spinner) findViewById(R.id.sexo_spinner);
+        // Create an ArrayAdapter using the string array and a default spinner layout
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
+                R.array.sexo_array, android.R.layout.simple_spinner_item);
+        // Specify the layout to use when the list of choices appears
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        // Apply the adapter to the spinner
+        spinner.setAdapter(adapter);
     }
 
 
@@ -64,6 +81,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
+
+
+
+
+
+    
 
     @Override
     public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {

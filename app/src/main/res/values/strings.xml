@@ -7,4 +7,13 @@
 
     <string name="from_date">Fecha nacimiento</string>
     <string name="to_date">To Date</string>
+
+
+
+    <string-array name="sexo_array">
+        <item>Hombre</item>
+        <item>Mujer</item>
+        <item>Gato</item>
+        <item>Mucho</item>
+    </string-array>
 </resources>
