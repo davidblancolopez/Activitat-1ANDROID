@@ -56,14 +56,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
                 /*SPINNER*/
 
-
+        //Creacion del spinner
         Spinner spinner = (Spinner) findViewById(R.id.sexo_spinner);
-        // Create an ArrayAdapter using the string array and a default spinner layout
+        //Indicamos que queremos utilizar el array sexo_spinner con este spinner
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
                 R.array.sexo_array, android.R.layout.simple_spinner_item);
-        // Specify the layout to use when the list of choices appears
+
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        // Apply the adapter to the spinner
+        // APlicamos el adapter al spinner
         spinner.setAdapter(adapter);
     }
 
@@ -73,11 +73,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v){
 
         if (v.getId() == R.id.buttonEnviar){
+            EditText etNombre2 = (EditText) findViewById(R.id.etNombre);
+            EditText etLugar2 = (EditText) findViewById(R.id.etLugar);
+            EditText etFecha2 = (EditText) findViewById(R.id.etFecha);
 
 
         }else if(v == fromDateEtxt) {
             fromDatePickerDialog.show();
 
+        }else if (v.getId() == R.id.sexo_spinner) {
+            fromDateEtxt = (EditText) findViewById(R.id.sexo_spinner);
         }
     }
 
@@ -86,7 +91,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
 
-    
+
 
     @Override
     public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
