@@ -5,9 +5,9 @@
     android:weightSum="1">
 
     <TextView
-        android:text="TextView"
+        android:text="tvTexto"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/textView"
+        android:id="@+id/tvTextoMuerte"
         android:layout_weight="0.50" />
 </LinearLayout>

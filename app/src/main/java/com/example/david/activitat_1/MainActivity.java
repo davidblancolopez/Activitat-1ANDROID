@@ -1,6 +1,8 @@
 package com.example.david.activitat_1;
 
 import android.app.DatePickerDialog;
+import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -65,6 +67,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         // APlicamos el adapter al spinner
         spinner.setAdapter(adapter);
+
+
+
     }
 
 
@@ -78,11 +83,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             EditText etFecha2 = (EditText) findViewById(R.id.etFecha);
 
 
+            Intent intent = new Intent (this, segundaActivity.class);
+
+            intent.putExtra ("nombre", etNombre2.getText().toString());
+            intent.putExtra ("lugar", etLugar2.getText().toString());
+            intent.putExtra ("fecha", etFecha2.getText().toString());
+
+            startActivity(intent);
+
+
         }else if(v == fromDateEtxt) {
             fromDatePickerDialog.show();
 
-        }else if (v.getId() == R.id.sexo_spinner) {
-            fromDateEtxt = (EditText) findViewById(R.id.sexo_spinner);
         }
     }
 
@@ -91,7 +103,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
 
-
+    //CALENDARIO
 
     @Override
     public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {

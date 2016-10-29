@@ -16,4 +16,16 @@
         <item>Gato</item>
         <item>Mucho</item>
     </string-array>
+
+
+    <string-array name="mensajes_muerte">
+        <item>Tu amigo fue muy gracioso, cuando te dio el cambiazo y en lugar de salir un paracaidas, salio una muñeca hinchable.
+        Ya te hemos olvidado. Amén.</item>
+        <item>Tu fax te engullirá al quedarsete la mano pegada al fax que intentabas mandar para darte de baja del adsl.
+        Ya te hemos olvidado. Amén.</item>
+        <item>Una estampida de Ocas salvajes te aplastará mientras caminas por el campo de minas de la zona de reclusos infectados de SIDA de Pluton Berbenero.</item>
+        <item>Haciendo parapente te chocas con un albatros que el muy cabron no habia señalizado la maniobra.</item>
+    </string-array>
+
+
 </resources>
