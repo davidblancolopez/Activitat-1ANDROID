@@ -125,9 +125,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/tvVicios"
-        android:layout_weight="0.15"
-        android:layout_row="5"
-        android:layout_column="0" />
+        android:layout_weight="0.15"/>
     </LinearLayout>
 
      <LinearLayout
@@ -140,9 +138,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:text="Sexo"
-        android:layout_row="5"
-        android:layout_column="1"/>
+        android:text="Sexo"/>
 
     <CheckBox
         android:id="@+id/checkBox2"
@@ -150,9 +146,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:text="Drogas"
-        android:layout_row="6"
-        android:layout_column="1"/>
+        android:text="Drogas"/>
 
     <CheckBox
         android:id="@+id/checkBox3"
@@ -160,9 +154,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:text="Alcohol"
-        android:layout_row="7"
-        android:layout_column="1"/>
+        android:text="Alcohol"/>
 
     <CheckBox
         android:id="@+id/checkBox4"
@@ -170,9 +162,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:text="Tabaco"
-        android:layout_row="8"
-        android:layout_column="1"/>
+        android:text="Tabaco"/>
 
 
     </LinearLayout>
@@ -191,9 +181,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/tvTrabajo"
-        android:layout_weight="0.15"
-        android:layout_row="10"
-        android:layout_column="0" />
+        android:layout_weight="0.15" />
     </LinearLayout>
 
      <LinearLayout
@@ -204,9 +192,7 @@
     <RadioGroup
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_row="10"
-        android:layout_column="1">
+        android:orientation="horizontal">
         <RadioButton android:id="@+id/radio_funcionario"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -238,9 +224,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/buttonEnviar"
-            android:elevation="0dp"
-            android:layout_row="12"
-            android:layout_column="1" />
+            android:elevation="0dp"/>
     </LinearLayout>
 
 
