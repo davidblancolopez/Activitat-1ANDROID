@@ -10,6 +10,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.RadioButton;
 import android.widget.Spinner;
 
 import java.text.SimpleDateFormat;
@@ -116,4 +117,27 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         fromDateEtxt.setText(dateFormatter.format(newDate.getTime()));
 
     }
+
+
+
+
+
+
+    public void onRadioButtonClicked(View view) {
+        // Is the button now checked?
+        boolean checked = ((RadioButton) view).isChecked();
+
+        // Check which radio button was clicked
+        switch(view.getId()) {
+            case R.id.radio_funcionario:
+                if (checked)
+                    // Pirates are the best
+                    break;
+            case R.id.radio_pringao:
+                if (checked)
+                    // Ninjas rule
+                    break;
+        }
+    }
+
 }

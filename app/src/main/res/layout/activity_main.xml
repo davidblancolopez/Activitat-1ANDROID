@@ -35,6 +35,9 @@
     </LinearLayout>
 
 
+    <Space
+        android:layout_width="1dp"
+        android:layout_height="1dp"/>
 
     //LUGAR//
 
@@ -62,6 +65,9 @@
 
 
 
+    <Space
+        android:layout_width="1dp"
+        android:layout_height="1dp"/>
 
     //FECHA//
 
@@ -87,6 +93,9 @@
 
 
 
+    <Space
+        android:layout_width="1dp"
+        android:layout_height="50dp"/>
 
     //SEXO//
 
@@ -110,7 +119,9 @@
     </LinearLayout>
 
 
-
+    <Space
+        android:layout_width="1dp"
+        android:layout_height="50dp"/>
 
     //VICIOS//
 
@@ -168,7 +179,9 @@
     </LinearLayout>
 
 
-
+    <Space
+        android:layout_width="1dp"
+        android:layout_height="50dp"/>
 
     //TRABAJO//
 
@@ -210,6 +223,9 @@
     </LinearLayout>
 
 
+    <Space
+        android:layout_width="1dp"
+        android:layout_height="50dp"/>
 
 
     //BOTON//

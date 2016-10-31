@@ -12,15 +12,16 @@ public class segundaActivity extends MainActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.segunda_activity);
 
-        int diaMuerte = (int)Math.floor(Math.random()*(30-1)+1);
-        int mesMuerte = (int)Math.floor(Math.random()*(12-1)+1);
-        int añoMuerte = (int)Math.floor(Math.random()*(2020-2010)+2010);
-
-
         Intent i = getIntent();
         String nombre = i.getStringExtra("nombre");
         String lugar = i.getStringExtra("lugar");
         String fecha = i.getStringExtra("fecha");
+
+
+
+        int mesMuerte = (int)Math.floor(Math.random()*(12-1)+1);
+        int añoMuerte = (int)Math.floor(Math.random()*(2040-2020)+2020);
+        int diaMuerte = obtenerDiaMuerte(mesMuerte, añoMuerte);
 
 
         TextView tvTexto = (TextView) findViewById (R.id.tvTextoMuerte);
@@ -48,4 +49,21 @@ public class segundaActivity extends MainActivity {
         tvTexto.setText(cadenaFinal);
     }
 
+
+    public int obtenerDiaMuerte(int mesMuerte, int añoMuerte){
+        int dia = 0;
+        if(mesMuerte == 2){
+                if((añoMuerte % 4 == 0 && añoMuerte % 100 != 0) || añoMuerte % 400 == 0){
+                    dia = (int)Math.floor(Math.random()*(29-1)+1);
+                }else{
+                    dia = (int)Math.floor(Math.random()*(28-1)+1);
+                }
+        }else if(mesMuerte == 4 || mesMuerte == 6 || mesMuerte == 9 || mesMuerte == 11){
+            dia = (int)Math.floor(Math.random()*(30-1)+1);
+        }else{
+            dia = (int)Math.floor(Math.random()*(31-1)+1);
+        }
+
+        return dia;
+    }
 }
