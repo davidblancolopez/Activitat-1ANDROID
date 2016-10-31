@@ -2,6 +2,7 @@ package com.example.david.activitat_1;
 
 import android.app.DatePickerDialog;
 import android.content.Intent;
+import android.content.res.Configuration;
 import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -138,6 +139,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     // Ninjas rule
                     break;
         }
+    }
+
+
+
+
+    @Override
+    public void onConfigurationChanged(Configuration newConfig) {
+        super.onConfigurationChanged(newConfig);
+        setContentView(R.layout.activity_main);
     }
 
 }

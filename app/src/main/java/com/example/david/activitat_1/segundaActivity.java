@@ -2,6 +2,7 @@ package com.example.david.activitat_1;
 
 
 import android.content.Intent;
+import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.widget.TextView;
@@ -65,5 +66,13 @@ public class segundaActivity extends MainActivity {
         }
 
         return dia;
+    }
+
+
+
+    @Override
+    public void onConfigurationChanged(Configuration newConfig) {
+        super.onConfigurationChanged(newConfig);
+        setContentView(R.layout.segunda_activity);
     }
 }
