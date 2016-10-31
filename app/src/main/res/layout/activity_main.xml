@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -10,14 +10,19 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity" >
 
+
+    //NOMBRE//
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
     <TextView
         android:text="Nombre: "
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/tvNombre"
-        android:layout_weight="0.15"
-        android:layout_row="0"
-        android:layout_column="0" />
+        android:layout_weight="0.15"/>
 
     <EditText
         android:layout_width="wrap_content"
@@ -26,25 +31,24 @@
         android:text="Nombre"
         android:ems="10"
         android:id="@+id/etNombre"
-        android:layout_weight="0.15"
-        android:layout_row="0"
-        android:layout_column="1" />
+        android:layout_weight="0.15" />
+    </LinearLayout>
 
 
 
+    //LUGAR//
 
 
-
-
-
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
     <TextView
         android:text="Lugar: "
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/tvLugar"
-        android:layout_weight="0.15"
-        android:layout_row="1"
-        android:layout_column="0" />
+        android:layout_weight="0.15" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -53,25 +57,24 @@
         android:text="Lugar nacimiento"
         android:ems="10"
         android:id="@+id/etLugar"
-        android:layout_weight="0.15"
-        android:layout_row="1"
-        android:layout_column="1" />
+        android:layout_weight="0.15"/>
+    </LinearLayout>
 
 
 
 
+    //FECHA//
 
 
-
-
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
     <TextView
         android:text="Fecha nacimiento: "
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/tvFecha"
-        android:layout_weight="0.15"
-        android:layout_row="2"
-        android:layout_column="0" />
+        android:id="@+id/tvFecha" />
 
 
     <EditText
@@ -79,52 +82,166 @@
         android:layout_width="164dp"
         android:layout_height="wrap_content"
         android:layout_weight="0.15"
-        android:hint="@string/from_date"
-        android:layout_row="2"
-        android:layout_column="1" />
+        android:hint="@string/from_date"/>
+    </LinearLayout>
 
 
 
 
+    //SEXO//
 
 
-
-
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
     <TextView
         android:text="Sexo: "
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/tvSexo"
-        android:layout_weight="0.15"
-        android:layout_row="3"
-        android:layout_column="0" />
+        android:layout_weight="0.15" />
 
 
     <Spinner
         android:id="@+id/sexo_spinner"
         android:layout_width="167dp"
+        android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+
+
+    //VICIOS//
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_row="3"
+        android:orientation="horizontal">
+    <TextView
+        android:text="Vicios: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvVicios"
+        android:layout_weight="0.15"
+        android:layout_row="5"
+        android:layout_column="0" />
+    </LinearLayout>
+
+     <LinearLayout
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal">
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Sexo"
+        android:layout_row="5"
+        android:layout_column="1"/>
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Drogas"
+        android:layout_row="6"
+        android:layout_column="1"/>
+
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Alcohol"
+        android:layout_row="7"
+        android:layout_column="1"/>
+
+    <CheckBox
+        android:id="@+id/checkBox4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Tabaco"
+        android:layout_row="8"
         android:layout_column="1"/>
 
 
+    </LinearLayout>
 
 
 
 
+    //TRABAJO//
 
-
-
-    <Button
-        android:text="Enviar"
-        android:layout_width="146dp"
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="26dp"
+        android:orientation="horizontal">
+    <TextView
+        android:text="Trabajo: "
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/buttonEnviar"
-        android:elevation="0dp"
-        android:layout_row="12"
-        android:layout_column="1" />
+        android:id="@+id/tvTrabajo"
+        android:layout_weight="0.15"
+        android:layout_row="10"
+        android:layout_column="0" />
+    </LinearLayout>
+
+     <LinearLayout
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical">
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_row="10"
+        android:layout_column="1">
+        <RadioButton android:id="@+id/radio_funcionario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Funcionario"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton android:id="@+id/radio_pringao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pringao"
+            android:onClick="onRadioButtonClicked"
+            android:layout_toRightOf="@+id/radio_funcionario"/>
+    </RadioGroup>
+
+
+    </LinearLayout>
 
 
 
 
-</GridLayout>
+    //BOTON//
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:text="Enviar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonEnviar"
+            android:elevation="0dp"
+            android:layout_row="12"
+            android:layout_column="1" />
+    </LinearLayout>
+
+
+</LinearLayout>
