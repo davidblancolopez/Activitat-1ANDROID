@@ -75,7 +75,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
 
-
+    /**
+     * Boton de enviar y el menu de seleccion de FECHA.
+     * @param v
+     */
     @Override
     public void onClick(View v){
 
@@ -120,10 +123,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
 
-
-
-
-
+    /**
+     * Radio buttons.
+     * @param view
+     */
     public void onRadioButtonClicked(View view) {
         // Is the button now checked?
         boolean checked = ((RadioButton) view).isChecked();

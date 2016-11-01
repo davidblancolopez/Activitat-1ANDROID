@@ -29,28 +29,30 @@ public class segundaActivity extends MainActivity {
         buttonSalir.setOnClickListener(this);
 
 
-
+        //Creamos las variables que reciben los datos de la Mainactivity.
         Intent i = getIntent();
         String nombre = i.getStringExtra("nombre");
         String lugar = i.getStringExtra("lugar");
         String fecha = i.getStringExtra("fecha");
 
 
-
+        //Estas són las variables que contienen la fecha de la Muerte.
         int mesMuerte = (int)Math.floor(Math.random()*(12-1)+1);
         int añoMuerte = (int)Math.floor(Math.random()*(2040-2020)+2020);
         int diaMuerte = obtenerDiaMuerte(mesMuerte, añoMuerte);
 
-
+        //TextView que contendra el mensaje de muerte.
         TextView tvTexto = (TextView) findViewById (R.id.tvTextoMuerte);
 
 
-
+        //Creamos un array de String que tendra los mensajes de muerte del array de Strings.xml .
         String[] mensajesMuerte;
         mensajesMuerte = getResources().getStringArray(R.array.mensajes_muerte);
         int num = (int)Math.floor(Math.random()*(mensajesMuerte.length-0)+ 0);
 
 
+
+        //Construimos la cadena que será el mensaje de muerte a mostrar.
         StringBuilder cadena = new StringBuilder();
         cadena.append(nombre);
         cadena.append(" ");
@@ -68,7 +70,10 @@ public class segundaActivity extends MainActivity {
     }
 
 
-
+    /**
+     * Botones de Volver y Salir.
+     * @param v
+     */
     @Override
     public void onClick(View v){
 
@@ -86,12 +91,12 @@ public class segundaActivity extends MainActivity {
     }
 
 
-
-
-
-
-
-
+    /**
+     * Este metodo generara el dia de muerte teniendo en cuenta el año y mes que han salido al azar.
+     * @param mesMuerte
+     * @param añoMuerte
+     * @return
+     */
     public int obtenerDiaMuerte(int mesMuerte, int añoMuerte){
         int dia = 0;
         if(mesMuerte == 2){
