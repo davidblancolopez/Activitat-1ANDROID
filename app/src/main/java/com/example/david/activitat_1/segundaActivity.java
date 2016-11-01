@@ -5,6 +5,9 @@ import android.content.Intent;
 import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 public class segundaActivity extends MainActivity {
@@ -12,6 +15,20 @@ public class segundaActivity extends MainActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.segunda_activity);
+
+
+        //Inicializamos el boton
+        Button buttonVolver = (Button) findViewById(R.id.buttonVolver);
+        //Le aplicamos un clickListener
+        buttonVolver.setOnClickListener(this);
+
+
+        //Inicializamos el boton
+        Button buttonSalir = (Button) findViewById(R.id.buttonSalir);
+        //Le aplicamos un clickListener
+        buttonSalir.setOnClickListener(this);
+
+
 
         Intent i = getIntent();
         String nombre = i.getStringExtra("nombre");
@@ -49,6 +66,30 @@ public class segundaActivity extends MainActivity {
         String cadenaFinal = cadena.toString();
         tvTexto.setText(cadenaFinal);
     }
+
+
+
+    @Override
+    public void onClick(View v){
+
+        if (v.getId() == R.id.buttonVolver){
+
+            Intent intent = new Intent (this, MainActivity.class);
+            startActivity(intent);
+
+
+        }else if(v.getId() == R.id.buttonSalir) {
+
+            finishAffinity();
+
+        }
+    }
+
+
+
+
+
+
 
 
     public int obtenerDiaMuerte(int mesMuerte, int añoMuerte){
