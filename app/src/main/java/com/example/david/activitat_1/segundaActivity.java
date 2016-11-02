@@ -56,7 +56,7 @@ public class segundaActivity extends MainActivity {
         StringBuilder cadena = new StringBuilder();
         cadena.append(nombre);
         cadena.append(" ");
-        cadena.append("nacido el ");
+        cadena.append("@+id/");
         cadena.append(fecha);
         cadena.append(" en ");
         cadena.append(lugar);
