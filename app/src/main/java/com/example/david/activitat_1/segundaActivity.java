@@ -56,11 +56,11 @@ public class segundaActivity extends MainActivity {
         StringBuilder cadena = new StringBuilder();
         cadena.append(nombre);
         cadena.append(" ");
-        cadena.append("@+id/");
+        cadena.append("nacido el ");
         cadena.append(fecha);
         cadena.append(" en ");
         cadena.append(lugar);
-        cadena.append(" nos dejó el ");
+        cadena.append(" nos dejo el ");
         cadena.append(diaMuerte + " del ");
         cadena.append(mesMuerte + " de ");
         cadena.append(añoMuerte + " ");

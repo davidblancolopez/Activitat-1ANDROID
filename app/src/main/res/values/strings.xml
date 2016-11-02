@@ -9,6 +9,9 @@
     <string name="sexo">Sexo</string>
 
 
+    <string name="nombre2">Nombre</string>
+    <string name="lugar2">Lugar</string>
+
 
     <string name="vicio1">Sexo</string>
     <string name="vicio2">Drogas</string>
@@ -46,8 +49,6 @@
     </string-array>
 
 
-    <string name="nacido">nacido el </string>
-    <string name="nosDejo"></string>
 
 
 

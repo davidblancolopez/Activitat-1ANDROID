@@ -28,7 +28,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:text="@string/nombre"
+        android:text="@string/nombre2"
         android:ems="10"
         android:id="@+id/etNombre"
         android:layout_weight="0.15" />
@@ -57,7 +57,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:text="@string/lugar"
+        android:text="@string/lugar2"
         android:ems="10"
         android:id="@+id/etLugar"
         android:layout_weight="0.15"/>

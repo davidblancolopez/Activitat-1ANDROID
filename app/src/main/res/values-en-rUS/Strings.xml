@@ -1,36 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Activitat-1</string>
-    <string name="nombre">Nombre: </string>
-    <string name="lugar">Lugar: </string>
-    <string name="fecha_nacimiento">Fecha Nacimiento: </string>
-    <string name="profesion">Profesion: </string>
-    <string name="vicios">Vicios: </string>
-    <string name="Boton">Calcular</string>
-    <string name="sexo">Sexo</string>
+    <string name="nombre">Name: </string>
+    <string name="lugar">Place: </string>
+    <string name="fecha_nacimiento">Birthday: </string>
+    <string name="profesion">Profession: </string>
+    <string name="vicios">vices: </string>
+    <string name="Boton">Calculate</string>
+    <string name="sexo">Gender</string>
 
 
+    <string name="nombre2">Name</string>
+    <string name="lugar2">Place</string>
 
-    <string name="vicio1">Sexo</string>
-    <string name="vicio2">Drogas</string>
+
+    <string name="vicio1">Sex</string>
+    <string name="vicio2">Drugs</string>
     <string name="vicio3">Alcohol</string>
-    <string name="vicio4">Tabaco</string>
+    <string name="vicio4">Tobacco</string>
 
 
-    <string name="profesion1">Funcionario</string>
+    <string name="profesion1">official</string>
     <string name="profesion2">Pringado</string>
 
 
-    <string name="from_date">Fecha nacimiento</string>
+    <string name="from_date">Birthday</string>
     <string name="to_date">To Date</string>
 
 
 
     <string-array name="sexo_array">
-        <item>Hombre</item>
-        <item>Mujer</item>
-        <item>Gato</item>
-        <item>Mucho</item>
+        <item>Men</item>
+        <item>Female</item>
+        <item>Cat</item>
+        <item>A lot</item>
     </string-array>
 
 
@@ -46,9 +49,6 @@
         <item>Moriras atragantado por una salchicha en un concurso de comer salchichas</item>
     </string-array>
 
-
-    <string name="nacido">nacido el </string>
-    <string name="nosDejo"></string>
 
 
 
