@@ -27,6 +27,11 @@
     <string name="to_date">To Date</string>
 
 
+    <string name="nacido"> nacido el </string>
+    <string name="en"> en </string>
+    <string name="nosDejo"> nos dejo el </string>
+
+
 
     <string-array name="sexo_array">
         <item>Hombre</item>

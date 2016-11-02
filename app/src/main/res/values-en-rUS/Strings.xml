@@ -20,13 +20,17 @@
     <string name="vicio4">Tobacco</string>
 
 
-    <string name="profesion1">official</string>
+    <string name="profesion1">Official</string>
     <string name="profesion2">Pringado</string>
 
 
     <string name="from_date">Birthday</string>
     <string name="to_date">To Date</string>
 
+    //TRADUCCIONES SACADAS DE GOOGLE LAS HE DEJADO MAL APOSTA, YA QUE LE DICE QUE VA A MORIR POR LO MENOS SE LO TOMA CON HUMOR.
+    <string name="nacido"> born on </string>
+    <string name="en"> in </string>
+    <string name="nosDejo"> left us </string>
 
 
     <string-array name="sexo_array">
@@ -36,17 +40,17 @@
         <item>A lot</item>
     </string-array>
 
-
+//TRADUCCIONES SACADAS DE GOOGLE LAS HE DEJADO MAL APOSTA, YA QUE LE DICE QUE VA A MORIR POR LO MENOS SE LO TOMA CON HUMOR.
     <string-array name="mensajes_muerte">
-        <item>Tu amigo fue muy gracioso, cuando te dio el cambiazo y en lugar de salir un paracaidas, salio una muñeca hinchable.
-        Ya te hemos olvidado. Amén.</item>
-        <item>Tu fax te engullirá al quedarsete la mano pegada al fax que intentabas mandar para darte de baja del adsl.
-        Ya te hemos olvidado. Amén.</item>
-        <item>Una estampida de Ocas salvajes te aplastará mientras caminas por el campo de minas de la zona de reclusos infectados de SIDA de Pluton Berbenero.</item>
-        <item>Haciendo parapente te chocas con un albatros que el muy cabron no habia señalizado la maniobra.</item>
-        <item>Moriras al golpeartela cabeza con el retrete por intentar hacerte un selfie colgado en la puerta del baño. </item>
-        <item>Moriras por asfixia autoinflingida al intentar darte mas placer sexual.</item>
-        <item>Moriras atragantado por una salchicha en un concurso de comer salchichas</item>
+        <item>Your friend was very funny, when you gave the cambiazo and instead of leaving a parachute, came an inflatable doll.
+        We ve already forgotten. Amen.</item>
+        <item>Your fax will engulf the quedarsete hand stuck to send fax you tried to unsubscribe from the adsl.
+        We ve already forgotten. Amen.</item>
+        <item>A stampede of wild geese crush you as you walk through the minefield in the area of ​​AIDS infected prisoners Berbenero Pluton.</item>
+        <item>Using paraglider will bump into an albatross that the bastard had not signaled the maneuver.</item>
+        <item>Golpeartela moriras the head with the toilet to try to make yourself a selfie hung on the bathroom door. </item>
+        <item>Moriras by self-inflicted while trying to give you more sexual pleasure asphyxiation.</item>
+        <item>Moriras choking on a sausage in a sausage eating contest</item>
     </string-array>
 
 

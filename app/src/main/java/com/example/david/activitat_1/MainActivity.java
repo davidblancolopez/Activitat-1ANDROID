@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 R.array.sexo_array, android.R.layout.simple_spinner_item);
 
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        // APlicamos el adapter al spinner
+        // Aplicamos el adapter al spinner
         spinner.setAdapter(adapter);
 
 

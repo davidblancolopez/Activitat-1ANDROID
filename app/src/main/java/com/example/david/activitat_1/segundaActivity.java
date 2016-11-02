@@ -10,6 +10,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import static android.R.string.no;
+import static com.example.david.activitat_1.R.string.nombre2;
+
 public class segundaActivity extends MainActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,17 +55,21 @@ public class segundaActivity extends MainActivity {
 
 
 
+        String nacido = getString(R.string.nacido);
+        String nosDejo = getString(R.string.nosDejo);
+        String en = getString(R.string.en);
+
         //Construimos la cadena que será el mensaje de muerte a mostrar.
         StringBuilder cadena = new StringBuilder();
         cadena.append(nombre);
         cadena.append(" ");
-        cadena.append("nacido el ");
-        cadena.append(fecha);
-        cadena.append(" en ");
-        cadena.append(lugar);
-        cadena.append(" nos dejo el ");
-        cadena.append(diaMuerte + " del ");
-        cadena.append(mesMuerte + " de ");
+        cadena.append(nacido + " ");
+        cadena.append(fecha + " ");
+        cadena.append(en + " ");
+        cadena.append(lugar + " ");
+        cadena.append(nosDejo + " ");
+        cadena.append(diaMuerte + " / ");
+        cadena.append(mesMuerte + " / ");
         cadena.append(añoMuerte + " ");
         cadena.append(mensajesMuerte[num]);
         String cadenaFinal = cadena.toString();
